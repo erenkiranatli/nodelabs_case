@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "352206153636",
+    "project_id": "nodelabs-case",
+    "storage_bucket": "nodelabs-case.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352206153636:android:795e708ca3b0c95f7f4331",
+        "android_client_info": {
+          "package_name": "com.nlabssoftware.nodelabsCase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCFCMre-d9kYlAV6ukhTAdXvxbU-QFBdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
