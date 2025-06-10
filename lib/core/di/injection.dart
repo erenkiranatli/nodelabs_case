@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
+import 'package:nodelabs_case/core/constants/api_constant.dart';
 import 'package:nodelabs_case/core/manager/auth_token_manager.dart';
 import 'package:nodelabs_case/data/repositories/auth_repository_impl.dart';
 import 'package:nodelabs_case/data/repositories/home_reposirtory_impl.dart';
@@ -19,7 +20,7 @@ final locator = GetIt.instance;
 void setup() {
   final dio = Dio(
     BaseOptions(
-      baseUrl: 'https://caseapi.servicelabs.tech',
+      baseUrl: ApiConstant.baseUrl,
       connectTimeout: const Duration(seconds: 15),
       receiveTimeout: const Duration(seconds: 15),
     ),
@@ -62,5 +63,5 @@ void setup() {
   );
   locator.registerFactory(() => MainBloc());
 
-locator.registerLazySingleton(() => ProfileBloc(profileRepository: locator<ProfileRepository>()));
+  locator.registerLazySingleton(() => ProfileBloc(profileRepository: locator<ProfileRepository>()));
 }

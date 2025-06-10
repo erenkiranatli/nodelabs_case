@@ -1,3 +1,3 @@
 class ApiConstant {
-  static const String baseUrl = 'https://caseapi.servicelabs.tech/api-docs/';
+  static const String baseUrl = 'https://caseapi.servicelabs.tech';
 }
